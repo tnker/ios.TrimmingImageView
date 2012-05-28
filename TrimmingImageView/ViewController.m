@@ -7,54 +7,48 @@
 //
 
 #import "ViewController.h"
+#import "EditViewController.h"
 
 @implementation ViewController
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
+  [super didReceiveMemoryWarning];
 }
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  [super viewDidLoad];
 }
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+  [super viewDidUnload];
 }
 
-- (void)viewWillAppear:(BOOL)animated
+#pragma mark - IBAction methods
+
+- (void)showPicker:(id)sender
 {
-    [super viewWillAppear:animated];
+  NSLog(@"show picker");
+  if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+    UIImagePickerController *pk = [[[UIImagePickerController alloc] init] autorelease];
+    pk.delegate = self;
+    pk.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    [self presentModalViewController:pk animated:YES];
+  }
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
+#pragma mark - UIImagePicker delegate methods
 
-- (void)viewWillDisappear:(BOOL)animated
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
 {
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-  return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+  EditViewController *editController =
+  [[EditViewController alloc] initWithPickerImage:image setInfo:editingInfo];
+  [picker pushViewController:editController animated:YES];
+  [editController release];
 }
 
 @end

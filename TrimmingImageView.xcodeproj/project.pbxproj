@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8906008A1573CB7F00557EE3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890600891573CB7F00557EE3 /* ViewController.xib */; };
+		8906008D1573CEEB00557EE3 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906008C1573CEEB00557EE3 /* EditViewController.m */; };
+		890600901573CF0E00557EE3 /* UIImage+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8906008F1573CF0E00557EE3 /* UIImage+extension.m */; };
 		89C10EF81573C48300628AF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C10EF71573C48300628AF8 /* UIKit.framework */; };
 		89C10EFA1573C48300628AF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C10EF91573C48300628AF8 /* Foundation.framework */; };
 		89C10EFC1573C48300628AF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C10EFB1573C48300628AF8 /* CoreGraphics.framework */; };
@@ -14,10 +17,14 @@
 		89C10F041573C48300628AF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C10F031573C48300628AF8 /* main.m */; };
 		89C10F081573C48300628AF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C10F071573C48300628AF8 /* AppDelegate.m */; };
 		89C10F0B1573C48300628AF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C10F0A1573C48300628AF8 /* ViewController.m */; };
-		89C10F0E1573C48300628AF8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C10F0C1573C48300628AF8 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890600891573CB7F00557EE3 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		8906008B1573CEEB00557EE3 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		8906008C1573CEEB00557EE3 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		8906008E1573CF0E00557EE3 /* UIImage+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+extension.h"; sourceTree = "<group>"; };
+		8906008F1573CF0E00557EE3 /* UIImage+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+extension.m"; sourceTree = "<group>"; };
 		89C10EF31573C48300628AF8 /* TrimmingImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrimmingImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C10EF71573C48300628AF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		89C10EF91573C48300628AF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -30,7 +37,6 @@
 		89C10F071573C48300628AF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		89C10F091573C48300628AF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		89C10F0A1573C48300628AF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		89C10F0D1573C48300628AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890600911573D0EC00557EE3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8906008E1573CF0E00557EE3 /* UIImage+extension.h */,
+				8906008F1573CF0E00557EE3 /* UIImage+extension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		890600921573D10000557EE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89C10F091573C48300628AF8 /* ViewController.h */,
+				89C10F0A1573C48300628AF8 /* ViewController.m */,
+				890600891573CB7F00557EE3 /* ViewController.xib */,
+				8906008B1573CEEB00557EE3 /* EditViewController.h */,
+				8906008C1573CEEB00557EE3 /* EditViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		89C10EE81573C48300628AF8 = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +106,8 @@
 			children = (
 				89C10F061573C48300628AF8 /* AppDelegate.h */,
 				89C10F071573C48300628AF8 /* AppDelegate.m */,
-				89C10F091573C48300628AF8 /* ViewController.h */,
-				89C10F0A1573C48300628AF8 /* ViewController.m */,
-				89C10F0C1573C48300628AF8 /* ViewController.xib */,
+				890600921573D10000557EE3 /* View */,
+				890600911573D0EC00557EE3 /* Category */,
 				89C10EFE1573C48300628AF8 /* Supporting Files */,
 			);
 			path = TrimmingImageView;
@@ -149,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C10F021573C48300628AF8 /* InfoPlist.strings in Resources */,
-				89C10F0E1573C48300628AF8 /* ViewController.xib in Resources */,
+				8906008A1573CB7F00557EE3 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +189,8 @@
 				89C10F041573C48300628AF8 /* main.m in Sources */,
 				89C10F081573C48300628AF8 /* AppDelegate.m in Sources */,
 				89C10F0B1573C48300628AF8 /* ViewController.m in Sources */,
+				8906008D1573CEEB00557EE3 /* EditViewController.m in Sources */,
+				890600901573CF0E00557EE3 /* UIImage+extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,14 +203,6 @@
 				89C10F011573C48300628AF8 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		89C10F0C1573C48300628AF8 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89C10F0D1573C48300628AF8 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

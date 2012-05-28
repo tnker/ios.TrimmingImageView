@@ -7,8 +7,40 @@
 //
 
 #import "EditViewController.h"
-#import "PictureDetailViewController.h"
 #import "UIImage+extension.h"
+
+@interface MaskView : UIView
+@end
+@implementation MaskView
+
+- (id)initWithFrame:(CGRect)frame
+{
+  self = [super initWithFrame:frame];
+  if (self) {
+    self.opaque = NO;
+  }
+  return self;
+}
+
+- (void)drawRect:(CGRect)rect
+{
+  self.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.0f];
+  
+  CGRect cRect = CGRectMake(0, 149, rect.size.width, 180);
+  CGRect sRect = CGRectMake(0.5, 149, rect.size.width-1, 180);
+  
+  CGContextRef context = UIGraphicsGetCurrentContext();
+  CGContextSetFillColorWithColor(context, [UIColor colorWithWhite:0.0f alpha:0.5f].CGColor);
+  CGContextFillRect(context, rect);
+  
+  CGContextClearRect(context, cRect);
+  
+  CGContextSetStrokeColorWithColor(context, [UIColor colorWithWhite:1.0f alpha:0.4f].CGColor);
+  CGContextSetLineWidth(context, 1.0);
+  CGContextStrokeRect(context, sRect);
+}
+
+@end
 
 @implementation EditViewController
 
@@ -51,7 +83,7 @@
   _screen.showsVerticalScrollIndicator = NO;
   _screen.showsHorizontalScrollIndicator = NO;
   
-  UIImageView *mask = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_edit_image"]];
+  MaskView *mask = [[MaskView alloc] initWithFrame:_screen.frame];
   [self.view addSubview:mask];
   mask.userInteractionEnabled = NO;
   
@@ -125,12 +157,15 @@
   UIImage *temp =
   [[[_iview.image cutImage:CGRectMake(__x, __y, _w, _h)] shrinkImage:CGSizeMake(1280, 720)] retain];
   
-  PictureDetailViewController *picController =
-  [[PictureDetailViewController alloc] initWithCameraRollData:temp];
-  [self.navigationController pushViewController:picController animated:YES];
+  [_iview removeFromSuperview];
+  [_iview release];
+  
+  _iview = [[UIImageView alloc] initWithImage:temp];
+  _screen.minimumZoomScale = 320/_iview.frame.size.width;
+  [_screen setZoomScale:_screen.minimumZoomScale];
+  [_screen addSubview:_iview];
   
   [temp release];
-  [picController release];
 }
 
 - (void)cancel

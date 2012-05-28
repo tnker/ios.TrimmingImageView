@@ -9,11 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface UIImage (extension)
-- (UIImage *)shrinkImage:(CGSize)size;  // reduction
-- (UIImage *)cutImage; // trimming
+- (UIImage *)shrinkImage:(CGSize)size;
 - (UIImage *)cutImage:(CGRect)rect;
-- (UIImage *)cutSquare:(CGSize)size;    // trimming square
-- (UIImage *)cutRectangle:(CGSize)size; // trimming timeline
-- (UIImage *)rotateImage:(int)angle;    // rotation
 @end
 

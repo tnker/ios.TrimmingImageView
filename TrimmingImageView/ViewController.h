@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+
+- (IBAction)showPicker:(id)sender;
 
 @end
