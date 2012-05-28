@@ -1,0 +1,279 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89C10EF81573C48300628AF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C10EF71573C48300628AF8 /* UIKit.framework */; };
+		89C10EFA1573C48300628AF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C10EF91573C48300628AF8 /* Foundation.framework */; };
+		89C10EFC1573C48300628AF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C10EFB1573C48300628AF8 /* CoreGraphics.framework */; };
+		89C10F021573C48300628AF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89C10F001573C48300628AF8 /* InfoPlist.strings */; };
+		89C10F041573C48300628AF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C10F031573C48300628AF8 /* main.m */; };
+		89C10F081573C48300628AF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C10F071573C48300628AF8 /* AppDelegate.m */; };
+		89C10F0B1573C48300628AF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C10F0A1573C48300628AF8 /* ViewController.m */; };
+		89C10F0E1573C48300628AF8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C10F0C1573C48300628AF8 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		89C10EF31573C48300628AF8 /* TrimmingImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrimmingImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89C10EF71573C48300628AF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		89C10EF91573C48300628AF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		89C10EFB1573C48300628AF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		89C10EFF1573C48300628AF8 /* TrimmingImageView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrimmingImageView-Info.plist"; sourceTree = "<group>"; };
+		89C10F011573C48300628AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89C10F031573C48300628AF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89C10F051573C48300628AF8 /* TrimmingImageView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrimmingImageView-Prefix.pch"; sourceTree = "<group>"; };
+		89C10F061573C48300628AF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		89C10F071573C48300628AF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		89C10F091573C48300628AF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		89C10F0A1573C48300628AF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		89C10F0D1573C48300628AF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89C10EF01573C48300628AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C10EF81573C48300628AF8 /* UIKit.framework in Frameworks */,
+				89C10EFA1573C48300628AF8 /* Foundation.framework in Frameworks */,
+				89C10EFC1573C48300628AF8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89C10EE81573C48300628AF8 = {
+			isa = PBXGroup;
+			children = (
+				89C10EFD1573C48300628AF8 /* TrimmingImageView */,
+				89C10EF61573C48300628AF8 /* Frameworks */,
+				89C10EF41573C48300628AF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89C10EF41573C48300628AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89C10EF31573C48300628AF8 /* TrimmingImageView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89C10EF61573C48300628AF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89C10EF71573C48300628AF8 /* UIKit.framework */,
+				89C10EF91573C48300628AF8 /* Foundation.framework */,
+				89C10EFB1573C48300628AF8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89C10EFD1573C48300628AF8 /* TrimmingImageView */ = {
+			isa = PBXGroup;
+			children = (
+				89C10F061573C48300628AF8 /* AppDelegate.h */,
+				89C10F071573C48300628AF8 /* AppDelegate.m */,
+				89C10F091573C48300628AF8 /* ViewController.h */,
+				89C10F0A1573C48300628AF8 /* ViewController.m */,
+				89C10F0C1573C48300628AF8 /* ViewController.xib */,
+				89C10EFE1573C48300628AF8 /* Supporting Files */,
+			);
+			path = TrimmingImageView;
+			sourceTree = "<group>";
+		};
+		89C10EFE1573C48300628AF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89C10EFF1573C48300628AF8 /* TrimmingImageView-Info.plist */,
+				89C10F001573C48300628AF8 /* InfoPlist.strings */,
+				89C10F031573C48300628AF8 /* main.m */,
+				89C10F051573C48300628AF8 /* TrimmingImageView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89C10EF21573C48300628AF8 /* TrimmingImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89C10F111573C48300628AF8 /* Build configuration list for PBXNativeTarget "TrimmingImageView" */;
+			buildPhases = (
+				89C10EEF1573C48300628AF8 /* Sources */,
+				89C10EF01573C48300628AF8 /* Frameworks */,
+				89C10EF11573C48300628AF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrimmingImageView;
+			productName = TrimmingImageView;
+			productReference = 89C10EF31573C48300628AF8 /* TrimmingImageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89C10EEA1573C48300628AF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 89C10EED1573C48300628AF8 /* Build configuration list for PBXProject "TrimmingImageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89C10EE81573C48300628AF8;
+			productRefGroup = 89C10EF41573C48300628AF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89C10EF21573C48300628AF8 /* TrimmingImageView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89C10EF11573C48300628AF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C10F021573C48300628AF8 /* InfoPlist.strings in Resources */,
+				89C10F0E1573C48300628AF8 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89C10EEF1573C48300628AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C10F041573C48300628AF8 /* main.m in Sources */,
+				89C10F081573C48300628AF8 /* AppDelegate.m in Sources */,
+				89C10F0B1573C48300628AF8 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89C10F001573C48300628AF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89C10F011573C48300628AF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89C10F0C1573C48300628AF8 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89C10F0D1573C48300628AF8 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89C10F0F1573C48300628AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		89C10F101573C48300628AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89C10F121573C48300628AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrimmingImageView/TrimmingImageView-Prefix.pch";
+				INFOPLIST_FILE = "TrimmingImageView/TrimmingImageView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		89C10F131573C48300628AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrimmingImageView/TrimmingImageView-Prefix.pch";
+				INFOPLIST_FILE = "TrimmingImageView/TrimmingImageView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89C10EED1573C48300628AF8 /* Build configuration list for PBXProject "TrimmingImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C10F0F1573C48300628AF8 /* Debug */,
+				89C10F101573C48300628AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89C10F111573C48300628AF8 /* Build configuration list for PBXNativeTarget "TrimmingImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C10F121573C48300628AF8 /* Debug */,
+				89C10F131573C48300628AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89C10EEA1573C48300628AF8 /* Project object */;
+}
