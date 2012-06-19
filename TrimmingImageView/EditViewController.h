@@ -1,6 +1,6 @@
 //
 //  EditViewController.h
-//  GrowthRecordApp
+//  TrimmingImageView
 //
 //  Created by tanaka on 12/05/18.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
